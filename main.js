@@ -14,6 +14,8 @@ function winner()
         document.getElementById('item' + 3).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[4] == squars[5] && squars[5] == squars[6] && squars[4] != '')
     {
@@ -23,6 +25,8 @@ function winner()
         document.getElementById('item' + 6).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[7] == squars[8] && squars[8] == squars[9] && squars[7] != '')
     {
@@ -32,6 +36,8 @@ function winner()
         document.getElementById('item' + 9).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[1] == squars[4] && squars[4] == squars[7] && squars[1] != '')
     {
@@ -41,6 +47,8 @@ function winner()
         document.getElementById('item' + 7).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[2] == squars[5] && squars[5] == squars[8] && squars[2] != '')
     {
@@ -50,6 +58,8 @@ function winner()
         document.getElementById('item' + 8).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[3] == squars[6] && squars[6] == squars[9] && squars[3] != '')
     {
@@ -59,6 +69,8 @@ function winner()
         document.getElementById('item' + 9).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[1] == squars[5] && squars[5] == squars[9] && squars[1] != '')
     {
@@ -68,6 +80,8 @@ function winner()
         document.getElementById('item' + 9).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
     else if(squars[3] == squars[5] && squars[5] == squars[7] && squars[3] != '')
     {
@@ -77,6 +91,8 @@ function winner()
         document.getElementById('item' + 7).style.background='rgb(255, 0, 68)';
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},3000);
+        var audio0 = new Audio('winner.mp3');
+        audio0.play();
     }
 }
 
@@ -88,11 +104,15 @@ function game(id)
         element.innerHTML='X';
         turn ="o";
         title.innerHTML = 'O';
+        var audio= new Audio('click.mp3');
+        audio.play();
     }
     else if(turn === 'o' && element.innerHTML == ''){
         element.innerHTML='O';
         turn ='x';
         title.innerHTML ='X';
+        var audio= new Audio('click.mp3');
+        audio.play();
     }
     winner();
 
